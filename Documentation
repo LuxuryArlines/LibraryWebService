@@ -1,0 +1,27 @@
+LibraryWebService
+
+Book			Member		Loan		
+ISBN			Email		ID
+Counter			SureName	Member
+							Book
+Title			LoanActive	DateStart
+Genre						DateExpire
+										
+LocationShelf
+OnLend
+
+Registry
+AddLoan
+ListLoan
+
+InterfaceBook
+Create
+Delete
+Read
+Search
+
+InterfaceMember
+Create
+Delete
+Read
+Search
