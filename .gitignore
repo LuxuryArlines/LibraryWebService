@@ -1,1 +1,7 @@
-/target/
+target/
+*.class
+
+# Eclipse ignores
+.settings/
+.classpath
+.project
