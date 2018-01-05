@@ -23,7 +23,7 @@ public class MemberService {
 	
 	//Inject a EJB to handle database logic
 	@Inject
-	MemberEJB memberService;
+	MemberInterface memberService;
 	
 	//Mark this method to handle GET requests
 	//and defines the content type.
@@ -39,7 +39,7 @@ public class MemberService {
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response createPeson(Member member) throws URISyntaxException {
 		memberService.createMember(member);
-		return Response.created(new URI("localhost:8080/jboss-javaee-webapp/rest/person")).build();
+		return Response.created(new URI("localhost:8080/jboss-javaee-webapp/rest/member")).build();
 	}
 	
 	//Mark this method to handle GET requests on /lastName

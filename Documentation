@@ -3,11 +3,10 @@ LibraryWebService
 Book			Member		Loan		
 ISBN			Email		ID
 Counter			SureName	Member
-							Book
-Title			LoanActive	DateStart
-Genre						DateExpire
-										
-LocationShelf
+Title						Book
+Genre			LoanActive	DateStart
+LocationShelf				DateExpire
+
 OnLend
 
 Registry
