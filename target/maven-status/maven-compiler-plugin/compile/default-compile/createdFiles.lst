@@ -1,7 +1,0 @@
-org\jboss\tools\examples\rest\JaxRsActivator.class
-lexicon\rest\Member_.class
-lexicon\rest\MemberEJB.class
-org\jboss\tools\examples\util\Resources.class
-lexicon\rest\MemberInterface.class
-lexicon\rest\Member.class
-lexicon\rest\MemberService.class
