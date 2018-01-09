@@ -24,3 +24,7 @@ Create
 Delete
 Read
 Search
+
+
+Member har oneToMany till Loan
+Loan har oneToOne till book
