@@ -18,8 +18,7 @@ import javax.ws.rs.core.Response;
 
 //The path to the rest service
 @Path("/member")
-@RequestScoped
-public class MemberService {
+public class MemberResource {
 	
 	//Inject a EJB to handle database logic
 	@Inject

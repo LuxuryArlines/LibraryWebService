@@ -1,10 +1,18 @@
 package lexicon.rest;
 
 import java.io.Serializable;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
+
+
+
 
 //Mark this class as a Entity
 @Entity
@@ -14,10 +22,18 @@ public class Member implements Serializable {
 	//and let the database generate the key
 	@Id
 	@GeneratedValue	
-	private int id;
+	private long memberId;
 	private String firstName;
-	private String lastName;	
+	private String lastName;
+	private String emailAdress;
 	
+	@OneToMany(fetch = FetchType.LAZY,cascade=CascadeType.ALL)
+	@JoinColumn ( name="memberId")
+	private List<Loan> loans;
+	
+	public List<Loan> getLoans() {
+		return loans;
+	}
 	//JPA requires empty constructor
 	public Member() {
 		
@@ -30,13 +46,13 @@ public class Member implements Serializable {
 	
 	
 	
-	public int getId() {
-		return id;
+	public long getId() {
+		return memberId;
 	}
 
 
-	public void setId(int id) {
-		this.id = id;
+	public void setId(long id) {
+		this.memberId = id;
 	}
 
 
