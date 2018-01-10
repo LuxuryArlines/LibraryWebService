@@ -13,11 +13,11 @@ public class LibraryResource {
 	 * library set status of book to loaned
 	*/
 	
-	public BookInterface FindBook() {
-		BookInterface book = new Book();
-		return book ;
-	}
-	
+//	public BookInterface FindBook() {
+//		BookInterface book = new Book();
+//		return book ;
+//	}
+//	
 	
 
 }

@@ -48,7 +48,7 @@ public class BookEJB implements BookInterface {
 	@Override
 	public List<Book> searchByTitle(String title) {
 		// Using JPQL to query database
-		TypedQuery<Book> query = em.createQuery("SELECT b FROM Book m WHERE b.lastName= :replace", Book.class);
+		TypedQuery<Book> query = em.createQuery("SELECT b FROM Book m WHERE title = :replace", Book.class);
 		query.setParameter("replace", title);
 		List<Book> book = query.getResultList();
 		return book;
