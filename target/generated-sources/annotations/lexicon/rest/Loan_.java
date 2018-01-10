@@ -9,7 +9,7 @@ import javax.persistence.metamodel.StaticMetamodel;
 @StaticMetamodel(Loan.class)
 public abstract class Loan_ {
 
-	public static volatile SingularAttribute<Loan, Long> LoandID;
+	public static volatile SingularAttribute<Loan, Long> LoanID;
 	public static volatile SingularAttribute<Loan, LocalDateTime> dateExpire;
 	public static volatile SingularAttribute<Loan, LocalDateTime> dateStart;
 
