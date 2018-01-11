@@ -1,9 +1,0 @@
-target/
-*.class
-
-# Eclipse ignores
-.settings/
-.classpath
-.project
-
-bin/src/main/webapp/resources/gfx/wildfly_400x130\.jpg
