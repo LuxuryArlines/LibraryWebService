@@ -1,2 +1,8 @@
 bin/
 target/
+*.class
+
+# Eclipse ignores
+.settings/
+.classpath
+.project
